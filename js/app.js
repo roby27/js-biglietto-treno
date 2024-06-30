@@ -4,6 +4,7 @@ let age = prompt("Quanti anni hai?")
 age = parseInt(age)
 let kmPercorsi = prompt("Quanti Km devi percorrere?")
 kmPercorsi = parseInt(kmPercorsi)
+
 let prezzo = kmPercorsi * tariffa
 
 const prezzoUnder18 = prezzo * 0.80
@@ -14,9 +15,9 @@ const prezzoElement = document.getElementById('prezzobiglietto')
 const sconto18Element = document.getElementById('sconto18')
 const sconto65Element = document.getElementById('sconto65')
 const tariffaElement = document.getElementById('tariffa')
+
 const today = new Date()
 const todayElement = document.getElementById('today')
-console.log(today)
 
 ageElement.innerHTML = age + " anni"
 kmElement.innerHTML = kmPercorsi + " Km"
