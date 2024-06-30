@@ -14,12 +14,16 @@ const prezzoElement = document.getElementById('prezzobiglietto')
 const sconto18Element = document.getElementById('sconto18')
 const sconto65Element = document.getElementById('sconto65')
 const tariffaElement = document.getElementById('tariffa')
+const today = new Date()
+const todayElement = document.getElementById('today')
+console.log(today)
 
 ageElement.innerHTML = age + " anni"
 kmElement.innerHTML = kmPercorsi + " Km"
 sconto18Element.innerHTML = "20%"
 sconto65Element.innerHTML = "40%"
 tariffaElement.innerHTML = tariffa + "€"
+todayElement.innerHTML = today
 
 
 if (age < 18) {
