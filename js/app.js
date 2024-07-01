@@ -1,9 +1,12 @@
 const tariffa = 0.21
+console.log("La tarrifa è di " + tariffa + "€ per Km percorso")
 
 let age = prompt("Quanti anni hai?")
 age = parseInt(age)
+console.log("Hai " + age + " anni")
 let kmPercorsi = prompt("Quanti Km devi percorrere?")
 kmPercorsi = parseInt(kmPercorsi)
+console.log("Devi percorrere " + kmPercorsi + " km")
 
 let prezzo = kmPercorsi * tariffa
 
@@ -29,10 +32,13 @@ todayElement.innerHTML = today
 
 if (age < 18) {
     prezzoElement.innerHTML = prezzoUnder18.toFixed(2) + "€"
+    console.log("Il prezzo del biglietto è di " + prezzoUnder18.toFixed(2) + "€")
 }
 else if (age > 65) {
     prezzoElement.innerHTML = prezzoOver65.toFixed(2) + "€"
+    console.log("Il prezzo del biglietto è di " + prezzoOver65.toFixed(2) + "€")
 }
 else {
     prezzoElement.innerHTML = prezzo.toFixed(2) + "€"
+    console.log("Il prezzo del biglietto è di " + prezzo.toFixed(2) + "€")
 }
