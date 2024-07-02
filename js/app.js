@@ -5,7 +5,7 @@ let age = prompt("Quanti anni hai?")
 age = parseInt(age)
 console.log("Hai " + age + " anni")
 let kmPercorsi = prompt("Quanti Km devi percorrere?")
-kmPercorsi = parseInt(kmPercorsi)
+kmPercorsi = parseFloat(kmPercorsi)
 console.log("Devi percorrere " + kmPercorsi + " km")
 
 let prezzo = kmPercorsi * tariffa
